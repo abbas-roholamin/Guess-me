@@ -49,3 +49,14 @@ document.querySelector(".check").addEventListener("click", function () {
     }
   }
 });
+
+// Set Click Event On Again Button
+document.querySelector(".again").addEventListener("click", function () {
+  randomNumber = GenrateRandomNumber();
+  score = 20;
+  document.querySelector(".score").textContent = score;
+  document.querySelector(".number").textContent = "?";
+  document.querySelector(".guess").value = "";
+  document.querySelector("body").style.backgroundColor = "#222";
+  DisplayMessage("Start guessing...");
+});
